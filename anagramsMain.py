@@ -3,7 +3,7 @@ NAME: Jonathan Argumedo
 PROFESSOR NAME: Diego Aguirre 
 TA NAME: Anindita Nath  
 CLASS: CS 2302 Data Structures
-DATE: November 4, 2018 
+DATE: November 9, 2018 
 UPDATDE BY: (Your name goes here)
 '''
 
@@ -112,7 +112,9 @@ def main():
                 populateAVLtree("words.txt", tree) #populate AVL Tree
                
                 userWord = input("\nEnter the word you want to search: ")
-                print("\n\nThe anagrams fro the word '%s' are..." % (userWord))
+                count = [] #list used in  method (countAnagrams)
+                print("\n\nThe word '%s' has [%d] anagrams." % (userWord, countAnagram(userWord, tree, count)))
+                print("\nThe anagrams fro the word '%s' are..." % (userWord))
                 print_anagram(userWord, tree) #check if the word has anagrams
                 
             except FileNotFoundError:
@@ -127,7 +129,9 @@ def main():
                 populateRedTree("words.txt", tree)
 
                 userWord = input("\nEnter the word you want to search: ")
-                print("\n\nThe anagrams fro the word '%s' are..." % (userWord))
+                count = [] #list used in  method (countAnagrams)
+                print("\n\nThe word '%s' has [%d] anagrams." % (userWord, countAnagram(userWord, tree, count)))
+                print("\nThe anagrams fro the word '%s' are..." % (userWord))
                 print_anagram(userWord, tree) #check if the word has anagrams
                 
             except FileNotFoundError:
