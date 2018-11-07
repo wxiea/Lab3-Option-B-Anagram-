@@ -3,7 +3,7 @@ NAME: Jonathan Argumedo
 PROFESSOR NAME: Diego Aguirre 
 TA NAME: Anindita Nath  
 CLASS: CS 2302 Data Structures
-DATE: November 9, 2018 
+DATE: November 4, 2018 
 UPDATDE BY: (Your name goes here)
 '''
 
